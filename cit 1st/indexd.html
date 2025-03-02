@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Service</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #05076e;
+            padding: 20px 0;
+            color: white;
+            text-align:left;
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+        }
+
+        header .logo {
+            width: 150px;
+            height: 100px;
+            
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-left: 20px;
+            flex-grow: 1;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        #hero {
+            background-color: #3698e9;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        #hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-btn {
+            background-color: #f70c0c;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+        }
+
+        .cta-btn:hover {
+            background-color: #c0392b;
+        }
+        /*About Styles */
+        .about {
+            padding: 60px 0;
+        }
+
+        .about h2 {
+            text-align:center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: rgb(63, 2, 161);
+
+        }
+        .about-item,
+        .pricing-item {
+            margin-bottom: 30px;
+        }
+
+        .about-item h3,
+        .pricing-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #fc1f1f;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .service-item,
+        .pricing-item {
+            margin-bottom: 30px;
+        }
+
+        .service-item h3,
+        .pricing-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        /* Slots Available */
+        #slotsAvailable h3 {
+          color: red;
+        }
+
+        #slotsAvailable .cta-btn {
+        background-color: yellow;
+        color: black;
+        }
+
+        #slotsAvailable .cta-btn:hover {
+        background-color: #c0c000;
+        }
+        /* Booking Form Styles */
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .booking-form label {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .booking-form input,
+        .booking-form select,
+        .booking-form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .booking-form button {
+            padding: 15px 25px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .booking-form button:hover {
+            background-color: #1c6f91;
+        }
+
+        /* Contact Section */
+        #contact p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        #contact a {
+            color: #047af0;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #0a77e4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <img src="D:\cit 1st\laundry service logo.png" alt="College Logo" class="logo">
+            <center><h1>Laundry Service</h1></center>            
+            <nav>
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#slotsAvailable">Slots Available</a></li>
+                    <li><a href="#booking">Book Laundry</a></li>
+                    <li><a href="#Timing">Timing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>Smart Laundry</h2>
+            <p>"Smart laundry technology is a real time-saver! It not only offers features like scheduling, load optimization, and remote monitoring, but it also helps conserve water and energy. It's great to see how technology is making everyday tasks more efficient!"</p>
+            <a href="#booking" class="cta-btn">Book Now</a>
+        </div>
+    </section>
+    <!--About Section-->
+    <Section id="About">
+        <div class="container">
+            <center><h2>About</h2></center>
+            <h3>About Laundry service</h3>
+            <p>"Laundry services are a great convenience for people with busy schedules. They take the hassle out of washing, drying, and folding clothes, allowing you to free up time for other important tasks. Plus, many services offer eco-friendly options and professional cleaning for delicate items, making them a reliable choice for both convenience and quality."</p>
+            
+
+        </div>
+    </Section>
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>Wash & Fold</h3>
+                <p>Get your clothes washed, dried, and neatly folded.</p>
+                <p>Enjoy the convenience of professional Wash & Fold services, where we take care of your laundry with expert care. Simply drop off your clothes, and we'll wash, dry, and neatly fold them—ready for pickup at your convenience.</p>
+            </div>
+            <div class="service-item">
+                <h3>Dry Cleaning</h3>
+                <p>Professional dry cleaning for your delicate clothes.</p>
+                <p>Keep your clothes looking their best with our expert dry cleaning services. We use advanced cleaning techniques to remove stains, preserve fabric quality, and extend the life of your garments.</p>
+            </div>
+            <div class="service-item">
+                <h3>Ironing</h3>
+                <p>We iron your clothes to perfection, giving them a crisp look.</p>
+                <p>Say goodbye to wrinkles and hello to a polished, professional look with our expert ironing service. We ensure that every garment is carefully pressed, maintaining fabric integrity while delivering a crisp, flawless finish.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Slots Available-->
+    <section id="slotsAvailable" class="section">
+        <div class="container">
+            <h2>Slots Available</h2>
+            <big><p>You can track your Bag,By using "The Check Button"</p></big>
+            <img src="D:\cit 1st\BAG TRACKING.png" width="1405" height="700" alt="slots available">
+            <center><h3>"To check availability, please click the check button."</center></h3>
+            <center><button type="submit" class="cta-btn">Check</button></center>
+        </div>
+    </section>
+    <!-- Booking Section -->
+    <section id="booking" class="section">
+        <div class="container">
+            <h2>Book Laundry Service</h2>
+            <form action="#" method="POST" class="booking-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service">Service Type</label>
+                <select id="service" name="service" required>
+                    <option value="All Process">All Process</option>
+                    <option value="wash_fold">Wash & Fold</option>
+                    <option value="dry_cleaning">Dry Cleaning</option>
+                    <option value="ironing">Ironing</option>
+                </select>
+
+                <label for="instructions">Special Instructions</label>
+                <textarea id="instructions" name="instructions" rows="4"></textarea>
+
+                <button type="submit" class="cta-btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+    <!--Timing-->
+    <section id="Timing" class="section">
+        <div class="container">
+            <h2>Timing</h2>
+            <p><b>Monday   </b>       -- 10:00 AM - 7:00 PM</p>
+            <p><b>Tuesday  </b>       -- 10:00 AM - 7:00 PM</p>
+            <p><b>wednesday</b>       -- 10:00 AM - 7:00 PM</p>
+            <p><b>Thursday </b>       -- 10:00 AM - 7:00 PM</p>
+            <p><b>Friday   </b>       -- 10:00 AM - 7:00 PM</p>
+            <p><b>Saturday </b>       -- 10:00 AM - 7:00 PM</p>
+            <p><b>Sunday   </b>            Holiday</p>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <img src="D:\cit 1st\laundry service logo.png" alt="laundry Logo" class="logo">
+            <p>TNPSC Road, Park Town, Chennai - 600003 (V O C Nagar)</p>
+            <p>Email: <a href="mailto:laundry@service.com">laundry@service.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <img width="25px" height="25px" src="D:\cit 1st\maps-and-flags.png"><a target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.004228646895!2d80.04123231482203!3d12.971580990855893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f4d07355bab5%3A0xbb6063169c4ed4d9!2sChennai+Institute+of+Technology!5e0!3m2!1sen!2sin!4v1548077876412">Google Map</a>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Laundry Service</p>
+        </div>
+    </footer>
+</body>
+</html>
